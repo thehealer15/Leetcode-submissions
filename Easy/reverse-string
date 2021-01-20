@@ -1,0 +1,14 @@
+/*
+https://leetcode.com/problems/reverse-string
+Runtime: 
+20 ms, faster than 97.65% of C++ online submissions for Reverse String.
+Memory Usage:
+23.2 MB, less than 90.94% of C++ online submissions for Reverse String.
+Next challenges
+*/
+class Solution {
+public:
+    void reverseString(vector<char>& a) {
+        reverse(a.begin(),a.end());
+    }
+};
