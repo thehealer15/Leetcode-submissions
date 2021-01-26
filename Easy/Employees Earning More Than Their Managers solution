@@ -1,0 +1,9 @@
+/*
+
+Runtime: 316 ms, faster than 71.37% of MySQL online submissions for Employees Earning More Than Their Managers.
+Memory Usage: 0B, less than 100.00% of MySQL online submissions for Employees Earning More Than Their Managers.
+*/
+SELECT E.name AS Employee from Employee E
+join Employee as M
+on E.managerID=M.ID
+where E.Salary > M.salary;
