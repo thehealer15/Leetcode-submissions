@@ -1,3 +1,6 @@
+// Akshay Pawar
+// Happy Coding :
+
 class Solution {
 public:
     int numberOfSteps (int n) {
