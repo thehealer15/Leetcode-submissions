@@ -1,0 +1,28 @@
+// Runtime: 32 ms, faster than 20.62% of C++ online submissions for Reverse Words in a String III.
+// Memory Usage: 12.3 MB, less than 31.22% of C++ online submissions for Reverse Words in a String III.
+// https://leetcode.com/problems/reverse-words-in-a-string-iii
+class Solution {
+    public:
+    string reverseWords(string s) {
+        string b, tmp;
+        int i=0;
+        
+        while(s[i]!='\0'){       
+            if(s[i]==' '){    
+                reverse(tmp.begin(),tmp.end());
+                tmp.push_back(' ');
+                b+=tmp;
+                tmp="";
+            }
+            else
+                tmp.push_back(s[i]);;
+            i++;            
+        }
+     while(i!=s.length()){
+         tmp.push_back(s[i++]);
+     }  
+     reverse(tmp.begin(),tmp.end());
+        // b+=tmp;
+    return b+tmp;
+    }
+};
