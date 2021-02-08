@@ -2,6 +2,7 @@
 // Memory Usage: 5.8 MB, less than 88.24% of C++ online submissions for Base 7.
 // https://leetcode.com/problems/base-7
 
+
 class Solution {
 public:
     string convertToBase7(int num) {
