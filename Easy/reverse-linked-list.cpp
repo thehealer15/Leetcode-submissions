@@ -24,3 +24,22 @@ class Solution {
         return head;
     }
 };
+/*
+https://leetcode.com/problems/reverse-linked-list
+Details
+Runtime: 4 ms, faster than 97.95% of C++ online submissions for Reverse Linked List.
+Memory Usage: 8.2 MB, less than 96.90% of C++ online submissions for Reverse Linked List.
+ */
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode* newHead=NULL;
+        while(head!=NULL){
+            ListNode* next=head->next;
+            head->next=newHead;
+            newHead=head;
+            head=next;
+        }
+        return newHead;
+    }
+};
